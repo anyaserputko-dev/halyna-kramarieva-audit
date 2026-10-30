@@ -76,13 +76,23 @@ ul.clean li:before{content:"";position:absolute;left:4px;top:21px;width:10px;hei
 .extras{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
 .extra{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
 .extra .p{font-family:Unbounded,sans-serif;font-size:18px;color:var(--accent2);margin-top:6px}
+.pair{background:var(--bg2);border:1px solid var(--line);border-radius:24px;padding:22px;margin-bottom:22px}
+.phead{display:flex;align-items:center;gap:12px;margin-bottom:16px}.phead .num{margin:0}.phead h3{margin:0}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:660px;margin:0 auto}
+.duo figure{margin:0}
+.lab{font-size:12px;letter-spacing:.12em;text-transform:uppercase;text-align:center;margin-bottom:8px}
+.lab.now{color:var(--warn)}.lab.todo{color:var(--good)}
+a.phone{display:block;border:0;background:#0b0b0c;border-radius:30px;padding:7px;box-shadow:0 16px 40px rgba(0,0,0,.45),inset 0 0 0 1px #3a3540}
+a.phone img{display:block;width:100%;height:auto;aspect-ratio:390/844;object-fit:cover;object-position:top;border-radius:24px;background:#fff}
+.note{max-width:660px;margin:16px auto 0;color:var(--text);font-size:16px}
+@media (max-width:820px){.pair{padding:14px}.duo{gap:8px}a.phone{border-radius:20px;padding:4px}a.phone img{border-radius:16px}.note{font-size:15px}}
 footer{padding:36px 0 60px;border-top:1px solid var(--line);color:var(--dim);font-size:13px}
 footer p{margin-bottom:8px}
 @media (max-width:820px){
   .stats{grid-template-columns:repeat(2,1fr)}
   .point{grid-template-columns:1fr;padding:20px}
   .point .phone{max-width:300px;margin:0 auto}
-  .comp,.packs,.extras,.duo,.plan{grid-template-columns:1fr}
+  .comp,.packs,.extras,.plan{grid-template-columns:1fr}
   body{font-size:16px}
 }
 </style>
@@ -112,91 +122,84 @@ footer p{margin-bottom:8px}
 
 <section>
   <div class="wrap">
-    <h2>Що вже працює</h2>
-    <ul class="clean">
-      <li><b>Рілси з вами в кадрі.</b> У 5 з 7 найпереглядуваніших рілсів року (1&nbsp;332–1&nbsp;770 переглядів) на обкладинці ви: «Вона хоче збільшити губи», «Галино, порадь два засоби», «Коли попросили прибрати зморшки без ботоксу».</li>
-      <li><b>Люди реагують.</b> Медіана рілса 44 вподобайки при 774 читачах, ER за підписниками ≈5,7%. Загальний орієнтир Instagram 0,36–0,55% за підписниками, але у малих акаунтів ER завжди вищий. Тож це не рекорд, а знак: вас дивляться і відгукуються.</li>
-      <li><b>Рілси виходять за межі підписників.</b> 26 з 34 рілсів набрали більше переглядів, ніж у вас читачів (перегляди рахують покази, а не унікальних людей).</li>
-      <li><b>Розмова виникає сама.</b> Жартівливі ситуації з кабінету зібрали 14, 10 і 8 коментарів, тоді як медіана рілса 1 коментар.</li>
-      <li><b>Готова база для продажу.</b> Закріплений прайс на 14 слайдів, послуги в шапці, сертифікати, SIA Med Summit (108 вподобайок, найбільше за рік).</li>
-    </ul>
+    <h2>Як зараз і як варто</h2>
+    <p class="lead" style="margin-bottom:22px">Ліворуч ваша сторінка зараз, праворуч та сама сторінка після зміни. У кожній парі змінено одне. Натисніть на екран, щоб відкрити його в повному розмірі.</p>
+    <div class="pair" id="p01">
+      <div class="phead"><span class="num">01</span><h3>Один шлях до запису</h3></div>
+      <div class="duo">
+        <figure><figcaption class="lab now">Як зараз</figcaption><a class="phone" href="img/prof_before.jpg" target="_blank"><img src="img/prof_before.jpg" alt="Як зараз: Один шлях до запису" loading="lazy"></a></figure>
+        <figure><figcaption class="lab todo">Як варто</figcaption><a class="phone" href="img/prof_after_bio.jpg" target="_blank"><img src="img/prof_after_bio.jpg" alt="Як варто: Один шлях до запису" loading="lazy"></a></figure>
+      </div>
+      <p class="note">Зараз «Запис та консультація» веде в Telegram-канал без контактів (185 підписників), а в дописах написано «Запис у Direct». Варто залишити одну дію, «Запис і ціни в Direct», і додати адресу (взяли з вашого допису 23.09, уточнимо).</p>
+    </div>
+    <div class="pair" id="p02">
+      <div class="phead"><span class="num">02</span><h3>Результати без мітки «ШІ-контент»</h3></div>
+      <div class="duo">
+        <figure><figcaption class="lab now">Як зараз</figcaption><a class="phone" href="img/ai_before.jpg" target="_blank"><img src="img/ai_before.jpg" alt="Як зараз: Результати без мітки «ШІ-контент»" loading="lazy"></a></figure>
+        <figure><figcaption class="lab todo">Як варто</figcaption><a class="phone" href="img/ai_after.jpg" target="_blank"><img src="img/ai_after.jpg" alt="Як варто: Результати без мітки «ШІ-контент»" loading="lazy"></a></figure>
+      </div>
+      <p class="note">Instagram позначив «ШІ-контент» 9 дописів, серед них цей «до/після» губ від 10.09. Результати публікуємо лише реальними фото, тоді мітки немає. В опитуванні 8 000 людей 31% сказали, що видимий ШІ-контент знижує їхню довіру.</p>
+    </div>
+    <div class="pair" id="p03">
+      <div class="phead"><span class="num">03</span><h3>Стрічка про вас, а не про бренд</h3></div>
+      <div class="duo">
+        <figure><figcaption class="lab now">Як зараз</figcaption><a class="phone" href="img/grid_before.jpg" target="_blank"><img src="img/grid_before.jpg" alt="Як зараз: Стрічка про вас, а не про бренд" loading="lazy"></a></figure>
+        <figure><figcaption class="lab todo">Як варто</figcaption><a class="phone" href="img/grid_after.jpg" target="_blank"><img src="img/grid_after.jpg" alt="Як варто: Стрічка про вас, а не про бренд" loading="lazy"></a></figure>
+      </div>
+      <p class="note">17 з 55 дописів за рік рекламують засоби Maria Galland. Варто показувати ваш кабінет, процедури з прайсу й однаковий гачок на обкладинках, а засоби лишити як один допис із чотирьох. Сітку «як варто» зібрано з ваших реальних кадрів.</p>
+    </div>
+    <div class="pair" id="p04">
+      <div class="phead"><span class="num">04</span><h3>Гачок у першому кадрі рілса</h3></div>
+      <div class="duo">
+        <figure><figcaption class="lab now">Як зараз</figcaption><a class="phone" href="img/reel_before.jpg" target="_blank"><img src="img/reel_before.jpg" alt="Як зараз: Гачок у першому кадрі рілса" loading="lazy"></a></figure>
+        <figure><figcaption class="lab todo">Як варто</figcaption><a class="phone" href="img/reel_after.jpg" target="_blank"><img src="img/reel_after.jpg" alt="Як варто: Гачок у першому кадрі рілса" loading="lazy"></a></figure>
+      </div>
+      <p class="note">Найкращі ваші рілси ті, де ви в кадрі (5 з 7 топових), але тему видно не з першої секунди. Тут ви розповідаєте про засоби для зони очей (10.03, 1 646 переглядів). Варто винести це питання текстом на перший кадр.</p>
+    </div>
+    <div class="pair" id="p05">
+      <div class="phead"><span class="num">05</span><h3>Хайлайти по шляху клієнтки</h3></div>
+      <div class="duo">
+        <figure><figcaption class="lab now">Як зараз</figcaption><a class="phone" href="img/prof_before.jpg" target="_blank"><img src="img/prof_before.jpg" alt="Як зараз: Хайлайти по шляху клієнтки" loading="lazy"></a></figure>
+        <figure><figcaption class="lab todo">Як варто</figcaption><a class="phone" href="img/prof_after_hl.jpg" target="_blank"><img src="img/prof_after_hl.jpg" alt="Як варто: Хайлайти по шляху клієнтки" loading="lazy"></a></figure>
+      </div>
+      <p class="note">Зараз першими стоять бренд і конференції, а «Відгуки» востаннє оновлені 56 тижнів тому. Варто: Запис, Ціни, До/після, Відгуки з обкладинками з ваших фото. Назви до 10 символів, щоб Instagram їх не обрізав.</p>
+    </div>
+    <div class="pair" id="p06">
+      <div class="phead"><span class="num">06</span><h3>Підписи без шаблону й абсолютів</h3></div>
+      <div class="duo">
+        <figure><figcaption class="lab now">Як зараз</figcaption><a class="phone" href="img/cap_before.jpg" target="_blank"><img src="img/cap_before.jpg" alt="Як зараз: Підписи без шаблону й абсолютів" loading="lazy"></a></figure>
+        <figure><figcaption class="lab todo">Як варто</figcaption><a class="phone" href="img/cap_after.jpg" target="_blank"><img src="img/cap_after.jpg" alt="Як варто: Підписи без шаблону й абсолютів" loading="lazy"></a></figure>
+      </div>
+      <p class="note">У дописі 23.09 лишились дужки шаблону «[Сума від 900 грн]…» і фраза «100% безпека». Варто публікувати чистий текст без абсолютних обіцянок: для лікаря вони ризиковані юридично.</p>
+    </div>
+    <div class="pair" id="p07">
+      <div class="phead"><span class="num">07</span><h3>Аватар з обличчям</h3></div>
+      <div class="duo">
+        <figure><figcaption class="lab now">Як зараз</figcaption><a class="phone" href="img/prof_before.jpg" target="_blank"><img src="img/prof_before.jpg" alt="Як зараз: Аватар з обличчям" loading="lazy"></a></figure>
+        <figure><figcaption class="lab todo">Як варто</figcaption><a class="phone" href="img/prof_after_avatar.jpg" target="_blank"><img src="img/prof_after_avatar.jpg" alt="Як варто: Аватар з обличчям" loading="lazy"></a></figure>
+      </div>
+      <p class="note">На аватарі ви на повний зріст на сцені, і в маленькому колі обличчя не видно. Варто поставити обличчя крупним планом (кадр з вашого ж рілса): аватар видно в кожному коментарі, сторіз і пошуку.</p>
+    </div>
+    <div class="pair" id="p08">
+      <div class="phead"><span class="num">08</span><h3>Відповіді в Direct за один дотик</h3></div>
+      <div class="duo">
+        <figure><figcaption class="lab now">Як зараз</figcaption><a class="phone" href="img/direct_before.jpg" target="_blank"><img src="img/direct_before.jpg" alt="Як зараз: Відповіді в Direct за один дотик" loading="lazy"></a></figure>
+        <figure><figcaption class="lab todo">Як варто</figcaption><a class="phone" href="img/direct_after.jpg" target="_blank"><img src="img/direct_after.jpg" alt="Як варто: Відповіді в Direct за один дотик" loading="lazy"></a></figure>
+      </div>
+      <p class="note">Зараз нова клієнтка відкриває порожній чат і сама вигадує, що написати. Варто увімкнути «Часті запитання» в Instagram: ціна, запис, адреса одним натисканням. Відповіді підготуємо за вашим прайсом.</p>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>Що змінити і навіщо</h2>
-
-    <div class="point">
-      <div><div class="phone"><img src="img/profile_head.jpg" alt="Шапка профілю @halynakramarieva" loading="lazy"></div><div class="cap">Шапка профілю, 30.10.2026</div></div>
-      <div>
-        <span class="num">01</span>
-        <h3>Шлях до запису розірваний</h3>
-        <div class="row now"><span class="lbl">Як зараз</span><p>Шапка закінчується словами «Запис та консультація ⬇️», а посилання веде в Telegram-канал «Косметолог Halyna Kramarieva»: 185 підписників, опис порожній, контактів для запису там немає. У дописах при цьому написано «Запис у Direct». Адреси й телефону в профілі немає.</p></div>
-        <div class="row todo"><span class="lbl">Що змінити</span><p>Один шлях: «Запис і ціни в Direct» плюс посилання на ваш особистий Telegram або форму запису. Адреса кабінету одним рядком у шапці й окремий хайлайт «Як записатись».</p></div>
-        <div class="row why"><span class="lbl">Навіщо</span><p>Людина, яка вже вирішила записатися, не повинна шукати, куди писати. Кожен зайвий крок тут коштує вам записів, і це найдешевша зміна з усього списку.</p></div>
-      </div>
-    </div>
-
-    <div class="point">
-      <div><div class="phone"><img src="img/ai_DdGy1gUjcIN.jpg" alt="Допис до/після губ з міткою ШІ-контент" loading="lazy"></div><div class="cap">Допис 10.09: мітка «ШІ-контент» під ім'ям</div></div>
-      <div>
-        <span class="num">02</span>
-        <h3>Мітка «ШІ-контент» під вашими результатами</h3>
-        <div class="row now"><span class="lbl">Як зараз</span><p>Instagram позначив 9 дописів як «ШІ-контент». Серед них «до/після» губ (10.09), видалення тату «до/після» (21.10) і закріплений прайс. Мітка стоїть одразу під вашим ім'ям, і її бачить кожен.</p></div>
-        <div class="row todo"><span class="lbl">Що змінити</span><p>Результати, кабінет і процес показувати тільки реальними фото й відео, без генерованих фонів і обробки. Інфографіку збирати з ваших фото. Найімовірніше, мітка з'являється через інструмент, яким робили картинки, тож перевіряємо кожен файл до публікації.</p></div>
-        <div class="row why"><span class="lbl">Навіщо</span><p>«До/після» з міткою «ШІ» викликає сумнів саме там, де потрібна довіра. В опитуванні 8&nbsp;000 людей у 8 країнах (грудень 2025) 31% сказали, що видимий ШІ-контент знижує їхню довіру до бренду, і лише 7% сказали, що підвищує.</p></div>
-      </div>
-    </div>
-
-    <div class="point">
-      <div><div class="phone flat"><img src="img/profile_grid.jpg" alt="Сітка профілю" loading="lazy"></div><div class="cap">Перший екран сітки</div></div>
-      <div>
-        <span class="num">03</span>
-        <h3>Стрічка більше про бренд догляду, ніж про вас</h3>
-        <div class="row now"><span class="lbl">Як зараз</span><p>17 з 55 дописів за рік рекламують засоби Maria Galland для дому: лінійки, набори, адвент-календар. Ще 4 рекламують інші засоби (Good Hair, Dr.Spiller). Серед останніх 30 дописів таких 13. Найбільший хайлайт, понад 35 сторіз, теж про бренд. Процедури з вашого прайсу (губи, ботулінотерапія, колагеностимуляція, лазер) з'являються помітно рідше.</p></div>
-        <div class="row todo"><span class="lbl">Що змінити</span><p>Рубрики навколо процедур, за якими до вас ідуть: губи, ботулінотерапія, біоревіталізація й колагеностимуляція, PrimeLazer. Догляд лишається, але як один допис із чотирьох.</p></div>
-        <div class="row why"><span class="lbl">Навіщо</span><p>За вашим прайсом ботулінотерапія коштує від 2&nbsp;000&nbsp;грн за зону, а колагеностимуляція від 13&nbsp;000&nbsp;грн. Саме ці процедури показують вас як лікаря, і саме за ними клієнтка приходить у кабінет.</p></div>
-      </div>
-    </div>
-
-    <div class="point noimg">
-      <div>
-        <span class="num">04</span>
-        <h3>Що показують ваші власні рілси</h3>
-        <div class="row now"><span class="lbl">Як зараз</span><p>У 5 з 7 найпереглядуваніших рілсів на обкладинці ви і жива ситуація з кабінету. Серед 6 найслабших (265–667 переглядів) у 4 вашого обличчя немає взагалі: банка засобу, рукавички, графіка «Філери для чуттєвих губ», чорний перший кадр. Говорите в кадрі ви рідко: з чотирьох топових рілсів, які ми прослухали, ваш голос звучить лише в одному (10.03, 1&nbsp;646 переглядів, другий результат року), в інших музика й текст.</p></div>
-      </div>
-      <div class="duo">
-        <div><div class="strip"><img src="img/reels_top.jpg" alt="Обкладинки найкращих рілсів" loading="lazy"></div><div class="cap">Найкращі: ви в кадрі, ситуація замість реклами</div></div>
-        <div><div class="strip"><img src="img/reels_bottom.jpg" alt="Обкладинки найслабших рілсів" loading="lazy"></div><div class="cap">Найслабші: товар, графіка, кадр без людини</div></div>
-      </div>
-      <div style="margin-top:16px">
-        <div class="row todo"><span class="lbl">Що змінити</span><p>Знімати більше того, що вже спрацювало: вас у кадрі, питання клієнток, ситуації з кабінету й розмовні рілси, де ви коротко пояснюєте одну процедуру. Перша секунда має одразу показувати людину й тему, а не логотип чи упаковку.</p></div>
-        <div class="row why"><span class="lbl">Навіщо</span><p>Instagram ранжує рілси за досмотром, вподобайками й пересиланнями (Адам Моссері, голова Instagram). Відео, яке хочеться переслати подрузі, виводить вас на людей, які вас ще не знають.</p></div>
-        <p class="src">Факт: розподіл переглядів. Висновок, що головна причина саме в обличчі на обкладинці, це наша гіпотеза, і перший місяць її перевіряє.</p>
-      </div>
-    </div>
-
-    <div class="point">
-      <div><div class="phone flat"><img src="img/profile_highlights.jpg" alt="Хайлайти профілю" loading="lazy"></div><div class="cap">Актуальні сторіз (хайлайти)</div></div>
-      <div>
-        <span class="num">05</span>
-        <h3>Хайлайти не ведуть до запису</h3>
-        <div class="row now"><span class="lbl">Як зараз</span><p>10 хайлайтів. У «Відгуках» лише кілька сторіз, і найсвіжіша додана 56 тижнів тому. Результати губ розкидані між «Beauty Lips» і «Вибране», найновіші там старші за рік. Дві добірки про одну конференцію (2025 і 2026). Немає «Про мене», «Ціни», «Питання» і «Як записатись».</p></div>
-        <div class="row todo"><span class="lbl">Що змінити</span><p>6 хайлайтів по шляху клієнтки: Про мене → Процедури й ціни → Результати → Відгуки → Питання (біль, відновлення, протипоказання) → Запис і адреса. Оновлювати щомісяця.</p></div>
-        <div class="row why"><span class="lbl">Навіщо</span><p>Хайлайти продають, навіть коли ви в кабінеті. Відгуки читають майже всі: 97% людей перед зверненням до локального бізнесу (опитування BrightLocal, США, 2026).</p></div>
-      </div>
-    </div>
-
-    <div class="point noimg">
-      <div>
-        <span class="num">06</span>
-        <h3>Аватар і тексти</h3>
-        <div class="row now"><span class="lbl">Як зараз</span><p>На аватарі ви на повний зріст на сцені SIA Med, і в маленькому колі обличчя майже не видно. У 8 рілсах замість підпису лише хештеги, емодзі або нічого. У дописі 23.09 лишились дужки шаблону «[Сума від 900&nbsp;грн] замість [Стандартна ціна в клініці від 2500] грн» і фраза «100% безпека». Розіграш 10.02 просив «постав + у коментарях» і «постав ❤️».</p></div>
-        <div class="row todo"><span class="lbl">Що змінити</span><p>Аватар: ваше обличчя крупним планом на спокійному фоні. Підпис: перший рядок зачіпає, далі одна думка і один заклик. Без абсолютів на кшталт «100% безпека» і без механік «постав +».</p></div>
-        <div class="row why"><span class="lbl">Навіщо</span><p>Аватар видно в кожному коментарі, сторіз і пошуку. Медичні гарантії й абсолюти ризиковані для лікаря юридично, а заклики «постав +» Meta прямо відносить до engagement bait і знижує охоплення таких дописів і акаунтів.</p></div>
-      </div>
-    </div>
+    <h2>Що вже працює</h2>
+    <ul class="clean">
+      <li><b>Ви в кадрі.</b> 5 з 7 найпереглядуваніших рілсів року (1&nbsp;332–1&nbsp;770 переглядів) з вами на обкладинці.</li>
+      <li><b>Люди реагують.</b> Медіана рілса 44 вподобайки при 774 читачах, ER ≈5,7% (загальний орієнтир Instagram 0,36–0,55%, у малих акаунтів він завжди вищий).</li>
+      <li><b>Вихід за межі підписників.</b> 26 з 34 рілсів набрали більше переглядів, ніж у вас читачів.</li>
+      <li><b>Готова база.</b> Прайс на 14 слайдів, сертифікати, SIA Med Summit (108 вподобайок, найбільше за рік).</li>
+    </ul>
   </div>
 </section>
 
@@ -257,11 +260,11 @@ footer p{margin-bottom:8px}
           <li>4 каруселі або дописи з реальними фото</li>
           <li>8 сторітелів (по 3–5 сторіз) у Canva</li>
           <li>Перший місяць: нова шапка, аватар, 6 хайлайтів, один шлях до запису</li>
-          <li>Скрипт відповідей у Direct: ціни, протипоказання, запис</li>
+          <li>«Часті запитання» в Direct і скрипт відповідей: ціни, протипоказання, запис</li>
           <li>Щомісячний звіт і КПІ, короткий розбір житомирських конкурентів</li>
         </ul>
         <div class="time"><b>Ваш час:</b> 2 зйомки на місяць по ~1,5 год (по 4 теми з готовим суфлером) і ~15 хв на тиждень на погодження.</div>
-        <div class="closes">Закриває пункти 01–06.</div>
+        <div class="closes">Закриває пункти 01–08.</div>
       </div>
       <div class="pack">
         <div class="kicker" style="margin-bottom:4px">Пакет 2</div>
@@ -277,7 +280,7 @@ footer p{margin-bottom:8px}
           <li>Дзвінок 30 хв раз на місяць за результатами</li>
         </ul>
         <div class="time"><b>Ваш час:</b> 3 зйомки на місяць по ~1,5 год і ~20 хв на тиждень.</div>
-        <div class="closes">Закриває 01–06 і додає потік людей, які вас ще не знають.</div>
+        <div class="closes">Закриває 01–08 і додає потік людей, які вас ще не знають.</div>
       </div>
     </div>
     <div class="extras">
