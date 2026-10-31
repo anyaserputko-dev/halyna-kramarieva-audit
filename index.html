@@ -4,17 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Аудит Instagram · Галина Крамарєва</title>
-<meta name="description" content="Аудит Instagram-сторінки лікаря-косметолога Галини Крамарєвої (Житомир): що працює, що змінити, навіщо.">
+<meta name="description" content="Аудит Instagram-сторінки лікаря-косметолога Галини Крамарєвої (Житомир): як зараз і як варто.">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#141216; --bg2:#1c1a20; --card:#221f27; --line:#34303b;
-  --text:#f3eff5; --muted:#b4acbb; --dim:#8d8496;
-  --accent:#c9a7ff; --accent2:#e8c9a0; --good:#9fd8b4; --warn:#ffb4a2;
-}
+:root{--bg:#141216;--bg2:#1c1a20;--card:#221f27;--line:#34303b;--text:#f3eff5;--muted:#b4acbb;--dim:#8d8496;--accent:#c9a7ff;--accent2:#e8c9a0;--good:#9fd8b4;--warn:#ffb4a2}
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{background:var(--bg);color:var(--text);font-family:Manrope,system-ui,-apple-system,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
@@ -22,45 +18,39 @@ a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(201,167,
 .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
 h1,h2,h3{font-family:Unbounded,Manrope,sans-serif;font-weight:500;letter-spacing:-.01em;margin:0}
 h1{font-size:clamp(28px,5vw,46px);line-height:1.12}
-h2{font-size:clamp(22px,3.4vw,30px);line-height:1.2;margin-bottom:18px}
-h3{font-size:19px;line-height:1.3;margin-bottom:10px}
+h2{font-size:clamp(22px,3.4vw,30px);line-height:1.2;margin-bottom:16px}
+h3{font-size:18px;line-height:1.3}
 p{margin:0 0 12px}
 .kicker{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2);margin-bottom:14px}
-header.hero{padding:56px 0 34px;background:radial-gradient(900px 400px at 85% 0%,rgba(201,167,255,.16),transparent 60%),radial-gradient(700px 360px at 0% 10%,rgba(232,201,160,.10),transparent 60%)}
-.hero .sub{color:var(--muted);max-width:720px;margin-top:16px;font-size:18px}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}
+header.hero{padding:52px 0 30px;background:radial-gradient(900px 400px at 85% 0%,rgba(201,167,255,.16),transparent 60%),radial-gradient(700px 360px at 0% 10%,rgba(232,201,160,.10),transparent 60%)}
+.hero .sub{color:var(--muted);max-width:720px;margin-top:14px;font-size:17px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}
 .stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 16px 14px}
-.stat b{display:block;font-family:Unbounded,sans-serif;font-weight:500;font-size:28px;color:var(--text);line-height:1.1}
+.stat b{display:block;font-family:Unbounded,sans-serif;font-weight:500;font-size:28px;line-height:1.1}
 .stat span{display:block;color:var(--muted);font-size:14px;margin-top:6px;line-height:1.35}
-section{padding:40px 0;border-top:1px solid var(--line)}
-.lead{font-size:19px;color:var(--text);max-width:820px}
+section{padding:36px 0;border-top:1px solid var(--line)}
+.lead{font-size:19px;max-width:820px}
 .lead em{font-style:normal;color:var(--accent2)}
+.pair{background:var(--bg2);border:1px solid var(--line);border-radius:24px;padding:22px;margin-bottom:22px}
+.phead{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.num{display:inline-block;font-family:Unbounded,sans-serif;font-size:13px;color:var(--bg);background:var(--accent);border-radius:999px;padding:4px 11px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:780px;margin:0 auto;align-items:start}
+.duo figure{margin:0}
+.lab{font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+.lab.now{color:var(--warn)}.lab.todo{color:var(--good)}
+a.shot{display:block;border:1px solid #3a3540;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 12px 30px rgba(0,0,0,.35)}
+a.shot img{display:block;width:100%;height:auto}
+.note{max-width:780px;margin:14px auto 0;font-size:16px}
 ul.clean{list-style:none;padding:0;margin:0}
 ul.clean li{padding:12px 0 12px 30px;position:relative;border-bottom:1px solid var(--line)}
 ul.clean li:last-child{border-bottom:0}
 ul.clean li:before{content:"";position:absolute;left:4px;top:21px;width:10px;height:10px;border-radius:50%;background:var(--good)}
-.point{background:var(--bg2);border:1px solid var(--line);border-radius:24px;padding:26px;margin-bottom:22px;display:grid;grid-template-columns:300px 1fr;gap:28px;align-items:start}
-.point.noimg{grid-template-columns:1fr}
-.num{display:inline-block;font-family:Unbounded,sans-serif;font-size:13px;color:var(--bg);background:var(--accent);border-radius:999px;padding:4px 11px;margin-bottom:12px}
-.phone{background:#000;border-radius:34px;padding:10px;border:1px solid #3a3540;box-shadow:0 18px 50px rgba(0,0,0,.45)}
-.phone img{display:block;width:100%;height:auto;border-radius:26px}
-.phone.flat img{border-radius:14px}
-.cap{font-size:13px;color:var(--dim);margin-top:10px;text-align:center}
-.row{margin:0 0 14px}
-.row .lbl{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
-.now .lbl{color:var(--warn)} .todo .lbl{color:var(--accent)} .why .lbl{color:var(--good)}
-.row p{margin:0}
-.src{font-size:13px;color:var(--dim)}
-.strip{border-radius:16px;overflow:hidden;border:1px solid var(--line)}
-.strip img{display:block;width:100%;height:auto}
-.duo{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.tag{display:inline-block;font-size:12px;padding:3px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted);margin-right:6px}
 .comp{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
 .cc{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px}
 .cc h3{font-size:16px;margin-bottom:6px}
 .cc .nums{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--muted);margin:6px 0 10px}
 .cc .nums b{color:var(--text);font-weight:700}
-.callout{background:linear-gradient(135deg,rgba(201,167,255,.12),rgba(232,201,160,.08));border:1px solid var(--line);border-radius:20px;padding:20px 22px;margin-top:18px}
+.callout{background:linear-gradient(135deg,rgba(201,167,255,.12),rgba(232,201,160,.08));border:1px solid var(--line);border-radius:20px;padding:18px 20px;margin-top:18px}
 .plan{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .plan div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
 .plan b{display:block;font-family:Unbounded,sans-serif;font-weight:500;font-size:15px;margin-bottom:8px;color:var(--accent2)}
@@ -76,24 +66,18 @@ ul.clean li:before{content:"";position:absolute;left:4px;top:21px;width:10px;hei
 .extras{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
 .extra{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
 .extra .p{font-family:Unbounded,sans-serif;font-size:18px;color:var(--accent2);margin-top:6px}
-.pair{background:var(--bg2);border:1px solid var(--line);border-radius:24px;padding:22px;margin-bottom:22px}
-.phead{display:flex;align-items:center;gap:12px;margin-bottom:16px}.phead .num{margin:0}.phead h3{margin:0}
-.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:660px;margin:0 auto}
-.duo figure{margin:0}
-.lab{font-size:12px;letter-spacing:.12em;text-transform:uppercase;text-align:center;margin-bottom:8px}
-.lab.now{color:var(--warn)}.lab.todo{color:var(--good)}
-a.phone{display:block;border:0;background:#0b0b0c;border-radius:30px;padding:7px;box-shadow:0 16px 40px rgba(0,0,0,.45),inset 0 0 0 1px #3a3540}
-a.phone img{display:block;width:100%;height:auto;aspect-ratio:390/844;object-fit:cover;object-position:top;border-radius:24px;background:#fff}
-.note{max-width:660px;margin:16px auto 0;color:var(--text);font-size:16px}
-@media (max-width:820px){.pair{padding:14px}.duo{gap:8px}a.phone{border-radius:20px;padding:4px}a.phone img{border-radius:16px}.note{font-size:15px}}
+.src{font-size:13px;color:var(--dim)}
 footer{padding:36px 0 60px;border-top:1px solid var(--line);color:var(--dim);font-size:13px}
 footer p{margin-bottom:8px}
-@media (max-width:820px){
-  .stats{grid-template-columns:repeat(2,1fr)}
-  .point{grid-template-columns:1fr;padding:20px}
-  .point .phone{max-width:300px;margin:0 auto}
-  .comp,.packs,.extras,.plan{grid-template-columns:1fr}
+@media (max-width:700px){
   body{font-size:16px}
+  .wrap{padding:0 16px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .lead{font-size:17px}
+  .pair{padding:14px;border-radius:20px}
+  .duo{grid-template-columns:1fr;gap:14px}
+  .note{font-size:15px;margin-top:12px}
+  .comp,.packs,.extras,.plan{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -103,10 +87,10 @@ footer p{margin-bottom:8px}
   <div class="wrap">
     <div class="kicker">Аудит Instagram · 30 жовтня 2026</div>
     <h1>Галина Крамарєва,<br>лікар-косметолог, Житомир</h1>
-    <p class="sub">Що вже працює, що гальмує записи і що змінити першим. Усі цифри зняті з публічної сторінки <a href="https://www.instagram.com/halynakramarieva/">@halynakramarieva</a> 30.10.2026.</p>
+    <p class="sub">Розбір публічної сторінки <a href="https://www.instagram.com/halynakramarieva/">@halynakramarieva</a> станом на 30.10.2026.</p>
     <div class="stats">
       <div class="stat"><b>774</b><span>читачі</span></div>
-      <div class="stat"><b>55</b><span>дописів за 12 місяців, тобто ~1 на тиждень</span></div>
+      <div class="stat"><b>56</b><span>дописів за 12 місяців</span></div>
       <div class="stat"><b>927</b><span>медіана переглядів рілса (35 рілсів)</span></div>
       <div class="stat"><b>4</b><span>дописи за останні 30 днів</span></div>
     </div>
@@ -116,77 +100,77 @@ footer p{margin-bottom:8px}
 <section>
   <div class="wrap">
     <h2>Коротко</h2>
-    <p class="lead">У вас є те, чого бракує багатьом: широкий прайс із високим чеком, навчання й конференції і рілси, де ви в кадрі. Гальмують три речі: <em>кнопка запису веде в канал без контактів</em>, <em>стрічка більше про бренд догляду, ніж про ваші процедури</em>, і <em>під двома «до/після» Instagram показує мітку «ШІ-контент»</em>.</p>
+    <p class="lead">Записам заважають три речі: <em>запис веде в канал без контактів</em>, <em>стрічка про бренд</em> і <em>мітка «ШІ» під результатами</em>.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
     <h2>Як зараз і як варто</h2>
-    <p class="lead" style="margin-bottom:22px">Ліворуч ваша сторінка зараз, праворуч та сама сторінка після зміни. У кожній парі змінено одне. Натисніть на екран, щоб відкрити його в повному розмірі.</p>
+    <p class="lead" style="margin-bottom:20px">У кожній парі змінено одне. Натисніть на картинку, щоб відкрити весь екран.</p>
     <div class="pair" id="p01">
       <div class="phead"><span class="num">01</span><h3>Один шлях до запису</h3></div>
       <div class="duo">
-        <figure><figcaption class="lab now">Як зараз</figcaption><a class="phone" href="img/prof_before.jpg" target="_blank"><img src="img/prof_before.jpg" alt="Як зараз: Один шлях до запису" loading="lazy"></a></figure>
-        <figure><figcaption class="lab todo">Як варто</figcaption><a class="phone" href="img/prof_after_bio.jpg" target="_blank"><img src="img/prof_after_bio.jpg" alt="Як варто: Один шлях до запису" loading="lazy"></a></figure>
+        <figure><figcaption class="lab now">Як зараз</figcaption><a class="shot" href="img/prof_before.jpg" target="_blank"><img src="img/c01_now.jpg" alt="Як зараз: Один шлях до запису" loading="lazy"></a></figure>
+        <figure><figcaption class="lab todo">Як варто</figcaption><a class="shot" href="img/prof_after_bio.jpg" target="_blank"><img src="img/c01_should.jpg" alt="Як варто: Один шлях до запису" loading="lazy"></a></figure>
       </div>
-      <p class="note">Зараз «Запис та консультація» веде в Telegram-канал без контактів (185 підписників), а в дописах написано «Запис у Direct». Варто залишити одну дію, «Запис і ціни в Direct», і додати адресу (взяли з вашого допису 23.09, уточнимо).</p>
+      <p class="note">Запис веде в канал без контактів, а в дописах «пишіть у Direct». Варто: одна дія й адреса з вашого допису 23.09.</p>
     </div>
     <div class="pair" id="p02">
       <div class="phead"><span class="num">02</span><h3>Результати без мітки «ШІ-контент»</h3></div>
       <div class="duo">
-        <figure><figcaption class="lab now">Як зараз</figcaption><a class="phone" href="img/ai_before.jpg" target="_blank"><img src="img/ai_before.jpg" alt="Як зараз: Результати без мітки «ШІ-контент»" loading="lazy"></a></figure>
-        <figure><figcaption class="lab todo">Як варто</figcaption><a class="phone" href="img/ai_after.jpg" target="_blank"><img src="img/ai_after.jpg" alt="Як варто: Результати без мітки «ШІ-контент»" loading="lazy"></a></figure>
+        <figure><figcaption class="lab now">Як зараз</figcaption><a class="shot" href="img/ai_before.jpg" target="_blank"><img src="img/c02_now.jpg" alt="Як зараз: Результати без мітки «ШІ-контент»" loading="lazy"></a></figure>
+        <figure><figcaption class="lab todo">Як варто</figcaption><a class="shot" href="img/lips_real.jpg" target="_blank"><img src="img/c02_should.jpg" alt="Як варто: Результати без мітки «ШІ-контент»" loading="lazy"></a></figure>
       </div>
-      <p class="note">Instagram позначив «ШІ-контент» 9 дописів, серед них цей «до/після» губ від 10.09. Результати публікуємо лише реальними фото, тоді мітки немає. В опитуванні 8 000 людей 31% сказали, що видимий ШІ-контент знижує їхню довіру.</p>
+      <p class="note">9 дописів позначені «ШІ-контент», серед них «до/після» губ. Ваш справжній «до/після» 2024 року виходить без мітки.</p>
     </div>
     <div class="pair" id="p03">
       <div class="phead"><span class="num">03</span><h3>Стрічка про вас, а не про бренд</h3></div>
       <div class="duo">
-        <figure><figcaption class="lab now">Як зараз</figcaption><a class="phone" href="img/grid_before.jpg" target="_blank"><img src="img/grid_before.jpg" alt="Як зараз: Стрічка про вас, а не про бренд" loading="lazy"></a></figure>
-        <figure><figcaption class="lab todo">Як варто</figcaption><a class="phone" href="img/grid_after.jpg" target="_blank"><img src="img/grid_after.jpg" alt="Як варто: Стрічка про вас, а не про бренд" loading="lazy"></a></figure>
+        <figure><figcaption class="lab now">Як зараз</figcaption><a class="shot" href="img/grid_before.jpg" target="_blank"><img src="img/c03_now.jpg" alt="Як зараз: Стрічка про вас, а не про бренд" loading="lazy"></a></figure>
+        <figure><figcaption class="lab todo">Як варто</figcaption><a class="shot" href="img/grid_after.jpg" target="_blank"><img src="img/c03_should.jpg" alt="Як варто: Стрічка про вас, а не про бренд" loading="lazy"></a></figure>
       </div>
-      <p class="note">17 з 55 дописів за рік рекламують засоби Maria Galland. Варто показувати ваш кабінет, процедури з прайсу й однаковий гачок на обкладинках, а засоби лишити як один допис із чотирьох. Сітку «як варто» зібрано з ваших реальних кадрів.</p>
+      <p class="note">17 з 56 дописів рекламують засоби Maria Galland. Варто: ваш кабінет, процедури з прайсу й однаковий гачок на обкладинках.</p>
     </div>
     <div class="pair" id="p04">
-      <div class="phead"><span class="num">04</span><h3>Гачок у першому кадрі рілса</h3></div>
+      <div class="phead"><span class="num">04</span><h3>Тема рілса з першої секунди</h3></div>
       <div class="duo">
-        <figure><figcaption class="lab now">Як зараз</figcaption><a class="phone" href="img/reel_before.jpg" target="_blank"><img src="img/reel_before.jpg" alt="Як зараз: Гачок у першому кадрі рілса" loading="lazy"></a></figure>
-        <figure><figcaption class="lab todo">Як варто</figcaption><a class="phone" href="img/reel_after.jpg" target="_blank"><img src="img/reel_after.jpg" alt="Як варто: Гачок у першому кадрі рілса" loading="lazy"></a></figure>
+        <figure><figcaption class="lab now">Як зараз</figcaption><a class="shot" href="img/reel_before.jpg" target="_blank"><img src="img/c04_now.jpg" alt="Як зараз: Тема рілса з першої секунди" loading="lazy"></a></figure>
+        <figure><figcaption class="lab todo">Як варто</figcaption><a class="shot" href="img/reel_after.jpg" target="_blank"><img src="img/c04_should.jpg" alt="Як варто: Тема рілса з першої секунди" loading="lazy"></a></figure>
       </div>
-      <p class="note">Найкращі ваші рілси ті, де ви в кадрі (5 з 7 топових), але тему видно не з першої секунди. Тут ви розповідаєте про засоби для зони очей (10.03, 1 646 переглядів). Варто винести це питання текстом на перший кадр.</p>
+      <p class="note">Рілс 10.03 (1 646 переглядів) про засоби для зони очей, але тему видно не одразу. Варто винести ваше питання на перший кадр.</p>
     </div>
     <div class="pair" id="p05">
       <div class="phead"><span class="num">05</span><h3>Хайлайти по шляху клієнтки</h3></div>
       <div class="duo">
-        <figure><figcaption class="lab now">Як зараз</figcaption><a class="phone" href="img/prof_before.jpg" target="_blank"><img src="img/prof_before.jpg" alt="Як зараз: Хайлайти по шляху клієнтки" loading="lazy"></a></figure>
-        <figure><figcaption class="lab todo">Як варто</figcaption><a class="phone" href="img/prof_after_hl.jpg" target="_blank"><img src="img/prof_after_hl.jpg" alt="Як варто: Хайлайти по шляху клієнтки" loading="lazy"></a></figure>
+        <figure><figcaption class="lab now">Як зараз</figcaption><a class="shot" href="img/prof_before.jpg" target="_blank"><img src="img/c05_now.jpg" alt="Як зараз: Хайлайти по шляху клієнтки" loading="lazy"></a></figure>
+        <figure><figcaption class="lab todo">Як варто</figcaption><a class="shot" href="img/prof_after_hl.jpg" target="_blank"><img src="img/c05_should.jpg" alt="Як варто: Хайлайти по шляху клієнтки" loading="lazy"></a></figure>
       </div>
-      <p class="note">Зараз першими стоять бренд і конференції, а «Відгуки» востаннє оновлені 56 тижнів тому. Варто: Запис, Ціни, До/після, Відгуки з обкладинками з ваших фото. Назви до 10 символів, щоб Instagram їх не обрізав.</p>
+      <p class="note">«Відгуки» востаннє оновлені 56 тижнів тому, хайлайтів з цінами й записом немає. Варто: Запис, Ціни, До/після, Відгуки.</p>
     </div>
     <div class="pair" id="p06">
-      <div class="phead"><span class="num">06</span><h3>Підписи без шаблону й абсолютів</h3></div>
+      <div class="phead"><span class="num">06</span><h3>Підпис без шаблону й абсолютів</h3></div>
       <div class="duo">
-        <figure><figcaption class="lab now">Як зараз</figcaption><a class="phone" href="img/cap_before.jpg" target="_blank"><img src="img/cap_before.jpg" alt="Як зараз: Підписи без шаблону й абсолютів" loading="lazy"></a></figure>
-        <figure><figcaption class="lab todo">Як варто</figcaption><a class="phone" href="img/cap_after.jpg" target="_blank"><img src="img/cap_after.jpg" alt="Як варто: Підписи без шаблону й абсолютів" loading="lazy"></a></figure>
+        <figure><figcaption class="lab now">Як зараз</figcaption><a class="shot" href="img/cap_before.jpg" target="_blank"><img src="img/c06_now.jpg" alt="Як зараз: Підпис без шаблону й абсолютів" loading="lazy"></a></figure>
+        <figure><figcaption class="lab todo">Як варто</figcaption><a class="shot" href="img/cap_after.jpg" target="_blank"><img src="img/c06_should.jpg" alt="Як варто: Підпис без шаблону й абсолютів" loading="lazy"></a></figure>
       </div>
-      <p class="note">У дописі 23.09 лишились дужки шаблону «[Сума від 900 грн]…» і фраза «100% безпека». Варто публікувати чистий текст без абсолютних обіцянок: для лікаря вони ризиковані юридично.</p>
+      <p class="note">У дописі 23.09 лишились дужки шаблону й «100% безпека». Варто: чистий текст без абсолютних обіцянок.</p>
     </div>
     <div class="pair" id="p07">
       <div class="phead"><span class="num">07</span><h3>Аватар з обличчям</h3></div>
       <div class="duo">
-        <figure><figcaption class="lab now">Як зараз</figcaption><a class="phone" href="img/prof_before.jpg" target="_blank"><img src="img/prof_before.jpg" alt="Як зараз: Аватар з обличчям" loading="lazy"></a></figure>
-        <figure><figcaption class="lab todo">Як варто</figcaption><a class="phone" href="img/prof_after_avatar.jpg" target="_blank"><img src="img/prof_after_avatar.jpg" alt="Як варто: Аватар з обличчям" loading="lazy"></a></figure>
+        <figure><figcaption class="lab now">Як зараз</figcaption><a class="shot" href="img/prof_before.jpg" target="_blank"><img src="img/c07_now.jpg" alt="Як зараз: Аватар з обличчям" loading="lazy"></a></figure>
+        <figure><figcaption class="lab todo">Як варто</figcaption><a class="shot" href="img/prof_after_avatar.jpg" target="_blank"><img src="img/c07_should.jpg" alt="Як варто: Аватар з обличчям" loading="lazy"></a></figure>
       </div>
-      <p class="note">На аватарі ви на повний зріст на сцені, і в маленькому колі обличчя не видно. Варто поставити обличчя крупним планом (кадр з вашого ж рілса): аватар видно в кожному коментарі, сторіз і пошуку.</p>
+      <p class="note">Зараз на аватарі сцена, обличчя в колі не видно. Варто: ваше обличчя крупним планом, кадр з вашого ж рілса.</p>
     </div>
     <div class="pair" id="p08">
-      <div class="phead"><span class="num">08</span><h3>Відповіді в Direct за один дотик</h3></div>
+      <div class="phead"><span class="num">08</span><h3>Відповіді в Direct одним натисканням</h3></div>
       <div class="duo">
-        <figure><figcaption class="lab now">Як зараз</figcaption><a class="phone" href="img/direct_before.jpg" target="_blank"><img src="img/direct_before.jpg" alt="Як зараз: Відповіді в Direct за один дотик" loading="lazy"></a></figure>
-        <figure><figcaption class="lab todo">Як варто</figcaption><a class="phone" href="img/direct_after.jpg" target="_blank"><img src="img/direct_after.jpg" alt="Як варто: Відповіді в Direct за один дотик" loading="lazy"></a></figure>
+        <figure><figcaption class="lab now">Як зараз</figcaption><a class="shot" href="img/direct_before.jpg" target="_blank"><img src="img/c08_now.jpg" alt="Як зараз: Відповіді в Direct одним натисканням" loading="lazy"></a></figure>
+        <figure><figcaption class="lab todo">Як варто</figcaption><a class="shot" href="img/direct_after.jpg" target="_blank"><img src="img/c08_should.jpg" alt="Як варто: Відповіді в Direct одним натисканням" loading="lazy"></a></figure>
       </div>
-      <p class="note">Зараз нова клієнтка відкриває порожній чат і сама вигадує, що написати. Варто увімкнути «Часті запитання» в Instagram: ціна, запис, адреса одним натисканням. Відповіді підготуємо за вашим прайсом.</p>
+      <p class="note">Нова клієнтка бачить порожній чат. Варто увімкнути «Часті запитання»: ціна, запис, адреса. Відповіді підготую за вашим прайсом.</p>
     </div>
   </div>
 </section>
@@ -195,9 +179,9 @@ footer p{margin-bottom:8px}
   <div class="wrap">
     <h2>Що вже працює</h2>
     <ul class="clean">
-      <li><b>Ви в кадрі.</b> 5 з 7 найпереглядуваніших рілсів року (1&nbsp;332–1&nbsp;770 переглядів) з вами на обкладинці.</li>
-      <li><b>Люди реагують.</b> Медіана рілса 44 вподобайки при 774 читачах, ER ≈5,7% (загальний орієнтир Instagram 0,36–0,55%, у малих акаунтів він завжди вищий).</li>
-      <li><b>Вихід за межі підписників.</b> 26 з 34 рілсів набрали більше переглядів, ніж у вас читачів.</li>
+      <li><b>Ви в кадрі.</b> У 5 з 7 найпереглядуваніших рілсів (1 332–1 770 переглядів) на обкладинці ви.</li>
+      <li><b>Люди реагують.</b> Медіана рілса 44 вподобайки при 774 читачах, ER 5,7%. Загальний орієнтир Instagram 0,36–0,55%, у малих акаунтів він завжди вищий.</li>
+      <li><b>Вихід за межі підписників.</b> 26 з 35 рілсів набрали більше переглядів, ніж у вас читачів.</li>
       <li><b>Готова база.</b> Прайс на 14 слайдів, сертифікати, SIA Med Summit (108 вподобайок, найбільше за рік).</li>
     </ul>
   </div>
@@ -206,30 +190,30 @@ footer p{margin-bottom:8px}
 <section>
   <div class="wrap">
     <h2>Конкуренти в Житомирі вже роблять це</h2>
-    <p class="lead" style="margin-bottom:18px">У пошуку Instagram за шістьма запитами («косметолог житомир», #косметологжитомир, #житомиркосметолог, «ботокс житомир», «губи житомир», «косметологія житомир») у видачі дописи інших косметологів, ваших там немає. Ось кого показує пошук і що в них працює.</p>
+    <p class="lead" style="margin-bottom:18px">У пошуку Instagram за шістьма запитами («косметолог житомир», #косметологжитомир та інші) у видачі дописи інших косметологів, ваших там немає.</p>
     <div class="comp">
       <div class="cc">
         <h3><a href="https://www.instagram.com/daria_brazhevska/">@daria_brazhevska</a></h3>
-        <div class="nums"><span><b>17&nbsp;039</b> читачів</span><span>медіана рілса <b>5&nbsp;293</b></span><span><b>9</b> дописів за 30 днів</span></div>
-        <p>«Один день разом зі мною. Косметолог у Житомирі» (19&nbsp;682 перегляди) і «Ботокс чи філер? Показую на своєму обличчі» (10&nbsp;027). У шапці одна дія: «Запис і ціни» з онлайн-записом.</p>
+        <div class="nums"><span><b>17 039</b> читачів</span><span>медіана рілса <b>5 293</b></span><span><b>9</b> дописів за 30 днів</span></div>
+        <p>«Один день разом зі мною. Косметолог у Житомирі» (19 682 перегляди) і «Ботокс чи філер? Показую на своєму обличчі» (10 027). У шапці одна дія: «Запис і ціни».</p>
       </div>
       <div class="cc">
         <h3><a href="https://www.instagram.com/_olga_yaremchuk__/">@_olga_yaremchuk__</a></h3>
-        <div class="nums"><span><b>7&nbsp;215</b> читачів</span><span>медіана рілса <b>4&nbsp;557</b></span><span><b>9</b> дописів за 30 днів</span></div>
-        <p>Гачок на обкладинці «Я стала жертвою косметології» (10&nbsp;470) і процес губ крупним планом (7&nbsp;304). Вона амбасадорка Totis Pharma, але стрічка про її процедури, а не про засоби.</p>
+        <div class="nums"><span><b>7 215</b> читачів</span><span>медіана рілса <b>4 557</b></span><span><b>9</b> дописів за 30 днів</span></div>
+        <p>Гачок «Я стала жертвою косметології» (10 470) і процес губ крупним планом (7 304). Амбасадорка Totis Pharma, але стрічка про її процедури.</p>
       </div>
       <div class="cc">
         <h3><a href="https://www.instagram.com/is.cosmetology/">@is.cosmetology</a></h3>
-        <div class="nums"><span><b>5&nbsp;453</b> читачів</span><span>медіана рілса <b>3&nbsp;029</b></span><span><b>7</b> дописів за 30 днів</span></div>
-        <p>Відповідає на страхи клієнток: «Ботокс не працює?» про корекцію через 14 днів (4&nbsp;869). Тренд-процедура Barbie Botox (5&nbsp;180). Адреса кабінету прямо в шапці.</p>
+        <div class="nums"><span><b>5 453</b> читачів</span><span>медіана рілса <b>3 029</b></span><span><b>7</b> дописів за 30 днів</span></div>
+        <p>Відповідає на страхи клієнток: «Ботокс не працює?» про корекцію через 14 днів (4 869). Адреса кабінету прямо в шапці.</p>
       </div>
       <div class="cc">
         <h3><a href="https://www.instagram.com/barsukova.aesthetic/">@barsukova.aesthetic</a></h3>
-        <div class="nums"><span><b>1&nbsp;177</b> читачів</span><span>медіана рілса <b>1&nbsp;147</b></span><span><b>7</b> дописів за 30 днів</span></div>
-        <p>Аудиторія майже як у вас, але за місяць 7 дописів проти ваших 4. Найпопулярніше особисте: відпустка (1&nbsp;938) і день народження (1&nbsp;793). У шапці «Безкоштовна консультація» і «Запис у Direct або ↓» з особистим Telegram.</p>
+        <div class="nums"><span><b>1 177</b> читачів</span><span>медіана рілса <b>1 147</b></span><span><b>7</b> дописів за 30 днів</span></div>
+        <p>Аудиторія як у вас, але за місяць 7 дописів проти ваших 4. Найпопулярніше особисте: відпустка (1 938) і день народження (1 793).</p>
       </div>
     </div>
-    <div class="callout"><b>Спільне в усіх чотирьох:</b> лікар в кадрі, гачок текстом на обкладинці, відповіді на страхи клієнток і один зрозумілий шлях до запису. Медіани рахуємо за останніми рілсами на сторінці кожного акаунта, станом на 30.10.2026.</div>
+    <div class="callout">Спільне в усіх чотирьох: лікар у кадрі, гачок на обкладинці, відповіді на страхи клієнток і один шлях до запису. Медіани конкуренток рахую за їхніми останніми рілсами на сторінці (від 9 до 12 на акаунт, без закріплених), округлено до цілого, 30.10.2026.</div>
   </div>
 </section>
 
@@ -237,11 +221,11 @@ footer p{margin-bottom:8px}
   <div class="wrap">
     <h2>Чого чекати за 1–3 місяці</h2>
     <div class="plan">
-      <div><b>Місяць 1</b>Нова шапка, аватар, 6 хайлайтів, один шлях до запису. Перша зйомка на 4 теми. Ритм 3 одиниці контенту на тиждень.</div>
-      <div><b>Місяць 2</b>Бачимо, які теми дають перегляди, пересилання і звернення в Direct. Те, що спрацювало, знімаємо в нових варіантах.</div>
-      <div><b>Місяць 3</b>Стабільний ритм і власна статистика. Рілси, що зайшли без реклами, можна підсилити рекламою.</div>
+      <div><b>Місяць 1</b>Нова шапка, аватар, хайлайти й один шлях до запису. Перша зйомка на 4 теми, 3 одиниці контенту на тиждень.</div>
+      <div><b>Місяць 2</b>Дивлюсь, які теми дають перегляди, пересилання й звернення в Direct, і пишу нові сценарії на те, що спрацювало.</div>
+      <div><b>Місяць 3</b>Стабільний ритм і ваша власна статистика. Рілси, що зайшли без реклами, можна підсилити рекламою.</div>
     </div>
-    <div class="callout">Чесно: цифр приросту ми не обіцяємо. Результат залежить від регулярних зйомок, від того, як швидко відповідаєте в Direct, і від сезону. Міряємо від вашої поточної бази: медіана 927 переглядів рілса, 4 дописи за 30 днів, а звернення в Direct почнемо рахувати з першого тижня.</div>
+    <div class="callout">Цифр приросту я не обіцяю: результат залежить від регулярних зйомок, швидкості відповідей у Direct і сезону. Міряю від вашої поточної бази: медіана 927 переглядів рілса, 4 дописи за 30 днів. Звернення в Direct почну рахувати з першого тижня.</div>
   </div>
 </section>
 
@@ -252,40 +236,40 @@ footer p{margin-bottom:8px}
       <div class="pack main">
         <div class="kicker" style="margin-bottom:4px">Пакет 1</div>
         <h3>Ведення</h3>
-        <div class="price">15&nbsp;000&nbsp;грн</div>
+        <div class="price">15 000 грн</div>
         <div class="per">на місяць</div>
         <ul>
           <li>Стратегія й рубрики під ваші процедури, контент-план на місяць</li>
           <li>8 рілсів: сценарії під суфлер, монтаж, обкладинки, підписи</li>
           <li>4 каруселі або дописи з реальними фото</li>
-          <li>8 сторітелів (по 3–5 сторіз) у Canva</li>
-          <li>Перший місяць: нова шапка, аватар, 6 хайлайтів, один шлях до запису</li>
+          <li>8 сторітелів по 3–5 сторіз</li>
+          <li>Перший місяць: шапка, аватар, хайлайти, один шлях до запису</li>
           <li>«Часті запитання» в Direct і скрипт відповідей: ціни, протипоказання, запис</li>
-          <li>Щомісячний звіт і КПІ, короткий розбір житомирських конкурентів</li>
+          <li>Звіт і КПІ щомісяця, розбір житомирських конкуренток</li>
         </ul>
-        <div class="time"><b>Ваш час:</b> 2 зйомки на місяць по ~1,5 год (по 4 теми з готовим суфлером) і ~15 хв на тиждень на погодження.</div>
+        <div class="time"><b>Ваш час:</b> 2 зйомки на місяць до 1,5 год (по 4 теми з готовим суфлером) і до 15 хв на тиждень на погодження.</div>
         <div class="closes">Закриває пункти 01–08.</div>
       </div>
       <div class="pack">
         <div class="kicker" style="margin-bottom:4px">Пакет 2</div>
         <h3>Ведення + реклама</h3>
-        <div class="price">22&nbsp;000&nbsp;грн</div>
+        <div class="price">22 000 грн</div>
         <div class="per">на місяць, рекламний бюджет окремо (оплачується напряму Meta)</div>
         <ul>
           <li>Усе з пакета «Ведення», плюс:</li>
           <li>12 рілсів замість 8 і 12 сторітелів замість 8</li>
           <li>Реклама Meta на запис у Direct: налаштування, 3–4 нові креативи на місяць з рілсів, що вже зайшли, контроль щотижня</li>
-          <li>Креативи й тексти з урахуванням правил Meta для медичних послуг: без «до/після» для ботулінотерапії й філерів, тільки 18+</li>
+          <li>Креативи за правилами Meta для медичних послуг: без «до/після» для ботулінотерапії й філерів, лише 18+</li>
           <li>Telegram-канал: опис, закріп із записом, основні дописи</li>
           <li>Дзвінок 30 хв раз на місяць за результатами</li>
         </ul>
-        <div class="time"><b>Ваш час:</b> 3 зйомки на місяць по ~1,5 год і ~20 хв на тиждень.</div>
-        <div class="closes">Закриває 01–08 і додає потік людей, які вас ще не знають.</div>
+        <div class="time"><b>Ваш час:</b> 3 зйомки на місяць до 1,5 год і до 20 хв на тиждень.</div>
+        <div class="closes">Закриває 01–08 і додає людей, які вас ще не знають.</div>
       </div>
     </div>
     <div class="extras">
-      <div class="extra"><b>+4 рілси разово</b><br><span class="src">на тій самій зйомці: сценарії, монтаж, обкладинки, підписи</span><div class="p">4&nbsp;000&nbsp;грн</div></div>
-      <div class="extra"><b>Фірмовий стиль сторіз</b><br><span class="src">15 шаблонів у Canva для щоденних сторіз і 6 обкладинок хайлайтів, щоб ви могли публікувати самі</span><div class="p">5&nbsp;000&nbsp;грн</div></div>
+      <div class="extra"><b>+4 рілси разово</b><br><span class="src">на тій самій зйомці: сценарії, монтаж, обкладинки, підписи</span><div class="p">4 000 грн</div></div>
+      <div class="extra"><b>Фірмовий стиль сторіз</b><br><span class="src">15 шаблонів у Canva для щоденних сторіз і 6 обкладинок хайлайтів, щоб ви публікували самі</span><div class="p">5 000 грн</div></div>
     </div>
   </div>
 </section>
@@ -293,14 +277,14 @@ footer p{margin-bottom:8px}
 <section>
   <div class="wrap">
     <h2>Наступний крок</h2>
-    <p class="lead">30 хвилин дзвінка: покажу план першого місяця і перші 4 теми для зйомки, складені під ваш прайс.</p>
+    <p class="lead">30 хвилин дзвінка: покажу план першого місяця і перші 4 теми для зйомки під ваш прайс.</p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <p>Дані: публічна сторінка Instagram @halynakramarieva, 30.10.2026, 55 дописів за 30.10.2025–30.10.2026 і перегляди 35 рілсів. Перегляди: лічильник Instagram (покази, а не унікальні люди). ER = (вподобайки + коментарі) / читачі. Конкуренти: перші результати пошуку Instagram за шістьма запитами, видача персоналізована.</p>
-    <p>Джерела: сигнали ранжування рілсів, Адам Моссері (Instagram), 2025, <a href="https://www.instagram.com/p/DFFyRp-pINJ/">instagram.com/p/DFFyRp-pINJ</a> · орієнтир ER, <a href="https://www.rivaliq.com/blog/good-engagement-rate-instagram/">Rival IQ</a>, <a href="https://www.socialinsider.io/social-media-benchmarks/instagram">Socialinsider</a> · довіра до ШІ-контенту, <a href="https://www.emarketer.com/content/shoppers-aren-t-impressed-by-ai-generated-marketing">eMarketer, 2025</a> · відгуки, BrightLocal Local Consumer Review Survey 2026 · engagement bait, <a href="https://transparency.meta.com/features/approach-to-ranking/types-of-content-we-demote/">Meta Transparency Center</a> · реклама медпослуг, <a href="https://transparency.meta.com/policies/ad-standards/restricted-goods-services/health-wellness/">Meta Advertising Standards</a>.</p>
+    <p>Дані: публічна сторінка Instagram @halynakramarieva, 30.10.2026. Дописи: 56 за 30.10.2025–30.10.2026. Перегляди: лічильник Instagram є в 35 рілсів за 21.11.2025–30.10.2026 (у 6 старших рілсів його на сторінці немає); це покази, а не унікальні люди. Медіани вподобайок і ER рахую за тими самими 35 рілсами, ER = (вподобайки + коментарі) / читачі. Конкурентки: перші результати пошуку Instagram, видача персоналізована. «Як варто» зроблено на вашій справжній сторінці: змінено лише один елемент, кадри для сітки, хайлайтів і аватара взяті з ваших дописів.</p>
+    <p>Джерела: орієнтир ER, <a href="https://www.rivaliq.com/blog/good-engagement-rate-instagram/">Rival IQ</a>, <a href="https://www.socialinsider.io/social-media-benchmarks/instagram">Socialinsider</a> · правила реклами медичних послуг, <a href="https://transparency.meta.com/policies/ad-standards/restricted-goods-services/health-wellness/">Meta Advertising Standards</a>.</p>
   </div>
 </footer>
 
